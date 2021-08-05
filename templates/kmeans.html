@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div>
+        <a class="btn btn-danger" href="{{url_for('static', filename='PDF/ReporteCompleto.pdf')}}" HSPACE="10" VSPACE="10" download="ReporteKMenas.pdf">Generar reporte <img src="https://img.icons8.com/office/50/000000/pdf.png" width = "30px" height = "30px"/></a>
+    </div>
+    <div>
+        <div >
+            <img src="{{url_for('static', filename='img/codo.jpg')}}" class="rounded float-left" alt="Responsive image"  width = "507px" height = "365px"HSPACE="10" VSPACE="10">
+            <img src="{{url_for('static', filename='img/clus1.jpg')}}" class="rounded float-right" alt="Responsive image" width = "507px" height = "365px"HSPACE="10" VSPACE="10">
+        </div>
+        
+        <div >
+            <img src="{{url_for('static', filename='img/clus2.jpg')}}" class="rounded float-left" alt="Responsive image"  width = "507px" height = "365px" HSPACE="10" VSPACE="10">
+            <img src="{{url_for('static', filename='img/clus3.jpg')}}" class="rounded float-right" alt="Responsive image" width = "507px" height = "365px"HSPACE="10" VSPACE="10">
+        </div>
+        
+    </div>
+    
+{% endblock %}

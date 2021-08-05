@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="row">
+        <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Test Signo Zodiacal</h5>
+            <p class="card-text">Contensta las preguntas referentes a tu personalidad respondiendo del 0-100</p>
+            <form action="/test"  HSPACE="10" VSPACE="10">
+                <button class="btn btn-primary "  HSPACE="10" VSPACE="10">
+                    Llenar Test <img src="https://img.icons8.com/cute-clipart/50/000000/test-passed.png" width = "50px" height = "50px"/>
+                </button>
+            </form>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Administración</h5>
+            <p class="card-text">Visualizar datos, exportar, realizar algoritmo K-means, Generar reporte</p>
+            <form action="/ver_datos"  HSPACE="10" VSPACE="10">
+                <button class="btn btn-primary "  HSPACE="10" VSPACE="10">
+                    Administración <img src="https://img.icons8.com/fluency/64/000000/admin-settings-male.png" width = "50px" height = "50px"/>
+                </button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}
